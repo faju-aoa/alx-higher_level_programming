@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-def add(a, b):
+if __name__ == "main":
+    from add_0 import add
     """My addition function
 
     Args:
@@ -10,4 +11,4 @@ def add(a, b):
     """
     a = 1
     b = 2
-    return print("{}+{}={}".format(a, b, a + b), end="")
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))

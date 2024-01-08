@@ -4,10 +4,7 @@ def no_c(my_string):
     d = [i for i in l_str]
     if "C" not in d:
         d.remove("c")
-    elif "C" and "c" in d:
-        d.remove("C")
-        d.remove("c")
-    elif "C" in d:
+    if "C" in d:
         d.remove("C")
     c = "".join(d)
     return c
